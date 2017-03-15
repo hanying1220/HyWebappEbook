@@ -1,0 +1,101 @@
+ html, body {
+     height: 100%;
+     overflow: auto;
+	 overflow-x: hidden; 
+	 overflow-y: hidden;
+	 font-family: "Microsoft YaHei" ! important;
+	 font-size:14px;
+	 line-height:1.5;
+}
+body {
+     padding: 0;
+     margin: 0;
+}
+
+ul , li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	border:1px solid red;
+}
+h3,h4,p {
+	margin:0;
+	padding: 0;
+}
+header {
+	position: absolute;
+	width:100%;
+	top:0;
+	left: 0;
+	z-index: 9;
+}
+
+header h3 {
+	text-align: center;
+	height: 3em;
+	line-height: 3em;
+}
+
+.container {
+	position: absolute;
+	width :100%;
+	height: 100%;
+/*	left:320px;
+	top:2em;*/
+	border:2px solid black;
+	-webkit-user-select: none;
+}
+
+.root {
+	position: absolute;
+	width :100%;
+	height: 100%;
+	top :0;
+	left:0;
+	overflow:hidden;
+	-webkit-perspective:1000;
+}
+
+.page {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	text-align:center;
+}
+
+.right {
+	left :2px;
+}
+.left {
+	right:2px;
+}
+
+.left,.right {
+	position: absolute;
+	top:45%;
+	width:3em;
+	height: 3em;
+	line-height: 3em;
+	text-align: center;
+	border-radius: 15%;
+	border:1px dashed white;
+}
+
+.left:hover,.right:hover {
+	background-color: #33ff44;
+	cursor:pointer;
+}
+
+footer {
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+}
+
+h4 {
+	height: 3em;
+	line-height: 3em;
+	text-align: center;
+	border-top: 1px solid green;
+}

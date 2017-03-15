@@ -1,0 +1,28 @@
+<DOCTYPE html>
+<html>
+<head>
+	<title> 写一个网页进度loading</title>
+	<style>
+		.loading{
+			display:table;
+			position:fixed;
+			top:0;
+			left:0;
+			width:100%;
+			height:100%;
+			background-color:#fff;
+			z-index:5;
+		}
+		
+		.loading .progress{
+			display:table-cell;
+			vertical-align:middle;
+			text-align:center;
+		}
+	</style>
+</head>
+<body>
+	<div class="loading" id="loading">
+		<div class="progress" id="progress">0%</div>
+	</div>
+</body>
